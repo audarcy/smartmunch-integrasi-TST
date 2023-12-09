@@ -117,7 +117,7 @@ const RecommendationForm = () => {
     //       },
     //     }
     //   );
-    const response = await axios.post(
+    await axios.post(
       `https://menurecommend.azurewebsites.net/add_user?id_user=${randomId}&nama_user=${formData.nama_user}&jenis_kelamin=${formData.jenis_kelamin}&umur_user=${formData.umur_user}&target_kalori=${formData.target_kalori}`,
       // Move the data payload here
       {
